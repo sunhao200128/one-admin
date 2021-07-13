@@ -1,7 +1,7 @@
 <template>
   <a :href="url">
     <slot name="content" :synopsis="synopsis">
-      百度111
+      百度
       <!-- {{ url }} -->
     </slot>
   </a>
