@@ -2,7 +2,9 @@
   <div class="top">
     <h1>普通插槽</h1>
     <Base class="a" url="https://www.baidu.com">
+      <!-- <template #content> -->
       <!-- <Icon icon="dynamic-avatar-4|svg" :size="100"></Icon> -->
+      <!-- </template> -->
       <!-- 父组件值：{{ name.ict }}，子组件值：{{ url }} -->
     </Base>
   </div>

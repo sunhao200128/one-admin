@@ -4,6 +4,9 @@
       百度
       <!-- {{ url }} -->
     </slot>
+    <div>
+      <slot></slot>
+    </div>
   </a>
 </template>
 

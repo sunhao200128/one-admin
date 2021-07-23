@@ -3,6 +3,8 @@
     <h1>作用域插槽</h1>
     <Base class="a" url="https://www.baidu.com">
       <template #content="{ synopsis }">
+        <!-- <template #[template]> -->
+        <!-- <template #content="message"> -->
         <div>父组件值：{{ name.ict }}</div>
         <!-- <div
           >子组件传过来的值：{{ slotProp.synopsis.name }}-{{ slotProp.synopsis.age }}-{{
@@ -10,6 +12,12 @@
           }}</div
         > -->
         <div>子组件传过来的值：{{ synopsis.name }}-{{ synopsis.age }}-{{ synopsis.time }}</div>
+        <div>{{ ites }}</div>
+        <!-- <div
+          >子组件传过来的值：{{ message.synopsis.name }}-{{ message.synopsis.age }}-{{
+            message.synopsis.time
+          }}</div
+        > -->
       </template>
       <!-- <Icon icon="dynamic-avatar-4|svg" :size="100"></Icon> -->
     </Base>
@@ -30,7 +38,16 @@
         name: {
           ict: '哈默',
         },
+        template: 'content',
+        ite: {
+          b: 1,
+        },
       };
+    },
+    computed: {
+      ites() {
+        return this.ite?.a || '孙浩';
+      },
     },
   };
 </script>
