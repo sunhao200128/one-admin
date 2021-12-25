@@ -26,6 +26,8 @@
       return {
         name: {
           ict: '哈默',
+          age:21,
+          sex:"男"
         },
       };
     },
